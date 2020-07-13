@@ -1,0 +1,6 @@
+/venv/
+/Scripts/
+/Lib/
+/Include/
+/pip-selfcheck.json
+/pyvenv.cfg
