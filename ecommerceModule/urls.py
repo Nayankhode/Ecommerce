@@ -19,13 +19,15 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from .views import login_page,register_page,home_page
-from products.views import ProductListView, product_list_view
+from products.views import ProductListView, product_list_view,ProductDetailView,product_detail_view
 urlpatterns = [
     url(r'^$', home_page),
     url(r'^login/$', login_page),
     url(r'^register/$', register_page),
     url(r'^products/$', ProductListView.as_view()),
     url(r'^products-fbv/$', product_list_view),
+    url(r'^products/(?P<pk>\d+)/$', ProductDetailView.as_view()),
+    url(r'^products-fbv/(?P<pk>\d+)/$', product_detail_view),
     url(r'^admin/', admin.site.urls),
 
 ]
