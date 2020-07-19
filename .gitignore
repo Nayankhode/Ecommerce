@@ -6,3 +6,5 @@
 /pyvenv.cfg
 /.idea/
 /ecommerceModule/__pycache__/
+products/__pycache__/
+products/migrations/__pycache__/
